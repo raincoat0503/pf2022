@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makinokaito</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="content hero">
+        <h1>Makino Kaito<br>Portfolio</h1>
+    </div>
+
+    <div class="content works">
+        <section class="works_main">
+            <h2>Works</h2>
+            <article class="works_item">
+                <a href="./pages/work01.html">
+                    <div class="works_img"><img src="./media/img/thumbnail_01.png" alt=""></div>
+                    <div class="works_hover">
+                        <div class="works_text">
+                            <h3>AQUAIGNIS</h3>
+                            <p>WebDesign</p>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="works_item">
+                <a href="./pages/work02.html">
+                    <div class="works_img"><img src="./media/img/thumbnail-02.png" alt=""></div>
+                    <div class="works_hover">
+                        <div class="works_text">
+                            <h3>豊田市美術館</h3>
+                            <p>WebDesign</p>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="works_item">
+                <a href="./pages/work03.html">
+                    <div class="works_img"><img src="./media/img/thumbnail-03.png" alt=""></div>
+                    <div class="works_hover">
+                        <div class="works_text">
+                            <h3>メンズエステEXCELLENT</h3>
+                            <p>WebDesign</p>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="works_item">
+                <a href="./pages/work04.html">
+                    <div class="works_img"><img src="./media/img/thumbnail-04.png" alt=""></div>
+                    <div class="works_hover">
+                        <div class="works_text">
+                            <h3>時計専門店lilia</h3>
+                            <p>WebDesign/VI</p>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+        </section>
+    </div>
+
+    <div class="content about">
+        <div class="about_text">
+            <h2>About</h2>
+            <h3>Designer&FrontendProgrammer</h3>
+            <p>2003年生まれ愛知県春日井市在住、名古屋デザイナー学院に在籍。<br>自身の制作の中では一貫してシンプルで伝わりやすいことに焦点をおいたデザインを行ってきました。<br>また、フロントエンドのWeb技術も持ち合わせており、デザインからコーディングまでを一貫して行うことのできるデザイナーとして即戦力として案件をいただくこともあります。<br>自身のスキルアップのため専門学校の友人と立ち上げたチーム「素でいる」にて活動もおこなっております。
+            </p>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"
+        integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('.works_item').children('a').hover(function () {
+                $(this).children('.works_hover').fadeIn(300);
+            },function(){
+                $(this).children('.works_hover').fadeOut(300);
+            })
+        })
+    </script>
+</body>
+
+</html>
